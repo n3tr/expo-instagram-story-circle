@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Text, Image, View } from "react-native";
-import LinearGradient from "react-native-linear-gradient";
+import { LinearGradient } from "expo-linear-gradient";
 import RNBounceable from "@freakycoder/react-native-bounceable";
 /**
  * ? Local Imports
@@ -11,7 +11,7 @@ import styles, {
   _notificationContainer,
 } from "./IGStoryCircle.style";
 
-interface IProps {
+type IProps = {
   size?: number;
   source: any;
   hasStory?: boolean;
@@ -28,7 +28,16 @@ interface IProps {
   notificationBubbleBackgroundColor?: string;
   innerBorderColor: string;
   onPress: () => void;
-}
+} & typeof defaultProps 
+
+const defaultProps = {
+  notificationSize: 18,
+  innerBorderColor: "#000",
+  defaultRingColor: ["#000", "#000"],
+  storyRingColor: ["#feda75", "#d62976"],
+  notificationBubbleBackgroundColor: "#eb3434",
+};
+
 
 const IGStoryCircle = (props: IProps) => {
   const {
@@ -53,7 +62,7 @@ const IGStoryCircle = (props: IProps) => {
   const defaultNotificationPositionTop = size / 12;
   const defaultNotificationPositionLeft = (size * 9) / 12;
 
-  const generateRingColor = () => {
+  const generateRingColor = (): [string, string] => {
     if (hasStory) return storyRingColor;
     else return defaultRingColor;
   };
@@ -74,8 +83,6 @@ const IGStoryCircle = (props: IProps) => {
 
   const renderIGCircle = () => (
     <LinearGradient
-      useAngle
-      angle={45}
       style={_storyRing(size)}
       colors={generateRingColor()}
       start={{ x: 0.0, y: 1.0 }}
@@ -102,12 +109,6 @@ const IGStoryCircle = (props: IProps) => {
   );
 };
 
-IGStoryCircle.defaultProps = {
-  notificationSize: 18,
-  innerBorderColor: "#000",
-  defaultRingColor: ["#000", "#000"],
-  storyRingColor: ["#feda75", "#d62976"],
-  notificationBubbleBackgroundColor: "#eb3434",
-};
+IGStoryCircle.defaultProps = defaultProps
 
 export default IGStoryCircle;
