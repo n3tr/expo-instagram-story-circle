@@ -1,3 +1,5 @@
+> Expo version of `react-native-instagram-story-circle` 
+
 <img alt="React Native Instagram Story Circle" src="assets/logo.png" width="1050"/>
 
 [![Fully customizable Instagram Story Circle with Bounceable Animated Library for React Native](https://img.shields.io/badge/-Fully%20customizable%20Instagram%20Story%20Circle%20with%20Bounceable%20Animated%20Library%20for%20React%20Native-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-instagram-story-circle)
@@ -18,16 +20,7 @@
 Add the dependency:
 
 ```bash
-npm i react-native-instagram-story-circle
-```
-
-## Peer Dependencies
-
-<h5><i>IMPORTANT! You need install them</i></h5>
-
-```js
-"react-native-linear-gradient": ">= 2.5.6"
-"@freakycoder/react-native-bounceable": ">= 0.1.0",
+npm i expo-instagram-story-circle
 ```
 
 # Usage
