@@ -4,8 +4,8 @@
 
 [![Fully customizable Instagram Story Circle with Bounceable Animated Library for React Native](https://img.shields.io/badge/-Fully%20customizable%20Instagram%20Story%20Circle%20with%20Bounceable%20Animated%20Library%20for%20React%20Native-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-instagram-story-circle)
 
-[![npm version](https://img.shields.io/npm/v/react-native-instagram-story-circle.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-instagram-story-circle)
-[![npm](https://img.shields.io/npm/dt/react-native-instagram-story-circle.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-instagram-story-circle)
+[![npm version](https://img.shields.io/npm/v/expo-instagram-story-circle.svg?style=for-the-badge)](https://www.npmjs.com/package/expo-instagram-story-circle)
+[![npm](https://img.shields.io/npm/dt/expo-instagram-story-circle.svg?style=for-the-badge)](https://www.npmjs.com/package/expo-instagram-story-circle)
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
@@ -28,7 +28,7 @@ npm i expo-instagram-story-circle
 ## Import
 
 ```jsx
-import IGStoryCircle from "react-native-instagram-story-circle";
+import IGStoryCircle from "expo-instagram-story-circle";
 ```
 
 ## Fundamental Usage
@@ -68,7 +68,7 @@ Inspired on [Zafer Ayan's Medium Article](https://medium.com/@ZaferAyan/react-na
 
 ## Author
 
-FreakyCoder, kurayogun@gmail.com
+Original: FreakyCoder, kurayogun@gmail.com
 
 ## License
 
